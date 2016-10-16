@@ -15,7 +15,7 @@ But what if - to save on overhead - we want to create a specialized interactive 
 
 ```bash
 
-git clone <this_repo>
+git clone https://github.com/erfangc/spark-on-spray.git
 
 #
 # if you have SBT installed, then just
@@ -31,6 +31,8 @@ then, run a simple word count by going to your browsers and hit up the following
 
  - `http://localhost:8080/distinct` for a traditional word count analysis (against a file localed on Local FS)
  - `http://localhost:8080/total` for the total # of words in the aforementioned file
+ 
+You can change the input file by editing `sample.txt` that lives at the project's root,then rerun these URLs to see the analysis update
  
  **Notice** subsequent calls to any of these URLs are significantly faster (even if you modify the input file), this is because we re-use the `SparkContext`
    
