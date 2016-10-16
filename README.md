@@ -2,12 +2,13 @@
 
 The spark engine on top of Hadoop is useful and extremely powerful. 
 
-But what if - to save on overhead - we want to create a specialized interactive SparkContext that is adopted to a specific Big Data analysis?
+... But what if - to save on overhead - we want to create an interactive `SparkContext` that is designed for a specific Big Data workload?
  
- The code presented in this example shows a crude Proof of Concept of a Http Service that can control a SparkContext
- A modern UI can be built on top of the Http interface to control a long running SparkContext, enabling:
+ The code presented in this example shows a crude Proof-of-Concept of a Http service that can control a `SparkContext`.
  
- - Rapid access to the SparkContext and partially processed DAGs
+ A modern UI can hthen be built on top of the Http interface to control a long running SparkContext, enabling:
+ 
+ - Rapid access to the SparkContext and partially processed DAGs & cached `RDD`s or `DataFrame`s
  - Interactive SparkSQL queries
  - Partial reruns of Spark jobs given partially updated inputs
 
